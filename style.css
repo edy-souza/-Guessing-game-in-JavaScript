@@ -63,6 +63,10 @@ body::before {
     margin-top: 16px;
 }
 
+.container__imagem-robo {
+    width: 46%;
+}
+
 .container__texto {
     margin: 16px 0 16px 0;
 }
@@ -70,6 +74,8 @@ body::before {
 .container__texto-azul {
     color: #1875E8;
 }
+
+
 
 h1 {
     font-family: 'Chakra Petch', sans-serif;
@@ -85,4 +91,34 @@ button {
 h2 {
     font-size: 32px;
     font-weight: 400;
+}
+
+
+@media (max-width: 864px) {
+    .container__imagem-robo {
+        width: 70vw;     
+        height: auto; 
+        margin: 0 auto; /* Centraliza horizontalmente */
+        order: 2; /* Altera a ordem na flexbox, movendo a imagem para baixo */
+    }
+
+    .container__informacoes h1, h2{
+        width: 100%; /* Ocupa a largura total disponível */
+        font-size: 35px; /* Tamanho de fonte maior para telas menores */
+        text-align: center;
+    }
+
+    .container__informacoes img {
+        width: 20vw;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .container__conteudo {
+        display: grid;
+        grid-template-columns: 1fr; /* Pode ajustar o número de colunas conforme necessário */
+        gap: 16px;
+    }
+
+    
 }
