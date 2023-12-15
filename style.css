@@ -104,7 +104,7 @@ h2 {
 
     .container__informacoes h1, h2{
         width: 100%; /* Ocupa a largura total disponível */
-        font-size: 35px; /* Tamanho de fonte maior para telas menores */
+        font-size: 36px; /* Tamanho de fonte maior para telas menores */
         text-align: center;
     }
 
